@@ -28,7 +28,7 @@
     .text-brand2 { color: var(--brand2); }
 </style>
 
-<body class="loading" x-data="{ error: false }">
+<body class="loading">
 
 <header class="bg-brand1 text-white shadow-xl p-3 mb-12">
     <div class="container flex flex-wrap">
@@ -57,7 +57,7 @@
     <a href="/pages/contact">Contact Us</a>
 </footer>-->
 
-<template x-if="error" x-on:error.document="error = true; message = $event.detail.message" x-on:next-step.document="error = false">
+<template x-data="{ error: false }" x-if="error" x-on:error.document="error = true; message = $event.detail.message" x-on:next-step.document="error = false">
     <div class="fixed md:top-0 md:bottom-auto md:left-auto bottom-0 left-0 right-0 mx-auto md:mx-5 my-6 pointer-events-none max-w-sm w-full bg-red-100 shadow-lg rounded-lg pointer-events-auto"
          x-transition:enter="transform ease-out duration-300 transition"
          x-transition:enter-start="translate-y-2 opacity-0 sm:translate-y-0 sm:translate-x-2"
