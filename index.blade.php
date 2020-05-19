@@ -2,31 +2,8 @@
 <html>
 
 <head>
-    <title>{{ $site['name'] }}</title>
-    <link rel="icon" type="image/png" href="{{ $site['branding']['favicon'] ?? '/favicon.png' }}" sizes="32x32" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <base href="{{ $page->folder }}" target="_self">
-    <link href="/default.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    @livewireStyles
+    {!! $headScripts ?? '' !!}
 </head>
-
-<script>
-    window.dataLayer = window.dataLayer || [];
-</script>
-
-<style>
-    :root {
-        --brand1: {{ $site['branding']['color1'] ?? null }};
-        --brand2: {{ $site['branding']['color2'] ?? null }};
-    }
-    .bg-brand1 { background-color: var(--brand1); }
-    .bg-brand2 { background-color: var(--brand2); }
-    .text-brand1 { color: var(--brand1); }
-    .text-brand2 { color: var(--brand2); }
-</style>
 
 <body class="loading">
 
@@ -93,8 +70,6 @@
     </div>
 </template>
 
-@livewireScripts
-@stack('scripts')
-<script src="/default.js"></script>
+{!! $footerScripts ?? '' !!}
 </body>
 </html>
