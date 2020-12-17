@@ -6,8 +6,8 @@
 </head>
 
 <body class="loading"
-      x-data="{ quiz: window.livewire.find(document.getElementById('Quiz').getAttribute('wire:id')).data }"
-      x-on:next-step.document="quiz = window.livewire.find(document.getElementById('Quiz').getAttribute('wire:id')).data"
+      x-data="{ quiz: window.livewire.find(document.getElementById('Quiz').getAttribute('wire:id')) }"
+      x-on:next-step.document="quiz = event.detail"
 >
 
 <header class="bg-brand1 text-white shadow-xl p-3 mb-12">
