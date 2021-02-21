@@ -10,9 +10,10 @@
       x-on:next-step.document="quiz = event.detail"
 >
 
-<header class="bg-brand1 text-white shadow-xl p-3 mb-12">
+<header class="border-b border-gray-200 border-solid p-3 mb-12">
     <div class="container flex flex-wrap">
-        <img src="{{ $site['branding']['logo'] ?? null }}" class="h-12 md:h-16 mx-auto md:mx-0" />
+        <img src="{{ $site['branding']['logo'] ?? null }}" class="h-10 md:h-12 mx-auto md:mx-0" />
+        {{--
         <div class="ml-auto md:flex items-center hidden">
             <i class="fad fa-phone-alt text-4xl"></i>
             <div class="flex flex-col ml-3">
@@ -20,12 +21,13 @@
                 <small>Talk To A Qualified Advisor</small>
             </div>
         </div>
+        --}}
     </div>
 </header>
 
-<section class="container">
-    <main id="app">
-
+<main id="app">
+    <section class="container">
+        {{--
         <template x-if="quiz.step <= 1">
             <div>
                 @if(!empty($page['headline'] ?? false))
@@ -46,23 +48,31 @@
                         <div class="w-full bg-gray-200 rounded-full mr-2">
                             <div class="rounded-full bg-green-500 text-xs leading-none h-2 text-center text-white" x-bind:style="'width: ' + ((quiz.step / quiz.stepMax) * 100) + '%'"></div>
                         </div>
-                        <div class="text-xs w-10 text-gray-600" x-text="((quiz.step / quiz.stepMax) * 100) + '%'"></div>
+                        <div class="text-xs w-10 text-gray-600" x-text="Math.round((quiz.step / quiz.stepMax) * 100) + '%'"></div>
                     </div>
                 </div>
             </div>
         </template>
+        --}}
+
+        <div class="uppercase tracking-wide text-xs font-bold text-gray-500 mb-1 leading-tight" x-text="'Step: ' + quiz.step + ' of ' + quiz.stepMax"></div>
 
         @livewire('quiz', ['page' => $page])
         <small class="mx-auto flex items-center justify-center text-gray-600"><i class="fas fa-lock mr-1"></i> 100% free savings estimate</small>
-        <a href="javascript:void(0)" x-show="quiz.step > 1" x-on:click="window.livewire.emit('backStep')" class="Quiz--back"><i class="far fa-angle-left"></i> Back</a>
-    </main>
-</section>
+        {{-- <a href="javascript:void(0)" x-show="quiz.step > 1" x-on:click="window.livewire.emit('backStep')" class="Quiz--back"><i class="far fa-angle-left"></i> Back</a> --}}
+    </section>
+</main>
 
-<!--<footer class="absolute inset-x-0 bottom-0 text-center">
-    <a href="/pages/privacy">Privacy Policy</a>
-    <a href="/pages/terms">Terms and Conditions</a>
-    <a href="/pages/contact">Contact Us</a>
-</footer>-->
+<footer>
+    <section class="container">
+        <p class="text-xs">We do not provide advice to investors and the information on this website should not be construed as such. The information which appears on our website is for information purposes only and does not constitute specific advice. Neither does it constitute a solicitation, offer or recommendation to invest in or dispose of, any investment. If you are in any doubt as to the suitability of an investment, you should seek independent financial advice from a suitable financial advisor</p>
+        <a href="/pages/privacy">Privacy Policy</a>
+        <a href="/pages/terms">Terms and Conditions</a>
+        <a href="/pages/contact">Contact Us</a>
+        <hr class="my-3" />
+        <span class="block text-center">© 2020 {{ $site['name'] }}</span>
+    </section>
+</footer>
 
 <x-alert />
 <x-footer-scripts />
