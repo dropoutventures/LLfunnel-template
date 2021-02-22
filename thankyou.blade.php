@@ -5,7 +5,7 @@
     <x-header-scripts />
 </head>
 
-<body class="loading">
+<body class="loading" id="{{ $view_name }}">
 
 <header class="border-b border-gray-200 border-solid p-3 mb-12">
     <div class="container flex flex-wrap">

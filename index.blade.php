@@ -5,7 +5,7 @@
     <x-header-scripts />
 </head>
 
-<body class="loading"
+<body class="loading" id="{{ $view_name }}"
       x-data="{ quiz: window.livewire.find(document.getElementById('Quiz').getAttribute('wire:id')) }"
       x-on:next-step.document="quiz = event.detail"
 >
