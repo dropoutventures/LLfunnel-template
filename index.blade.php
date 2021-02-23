@@ -10,9 +10,11 @@
       x-on:next-step.document="quiz = event.detail"
 >
 
-<header class="border-b border-gray-200 border-solid p-3 mb-12">
+<header class="border-b border-gray-200 border-solid p-3">
     <div class="container flex flex-wrap">
-        <img src="{{ $site['branding']['logo'] ?? null }}" class="h-10 md:h-12 mx-auto md:mx-0" />
+        <a href="/">
+            <img src="{{ $site['branding']['logo'] ?? null }}" class="md:h-12 mx-auto md:mx-0" />
+        </a>
         {{--
         <div class="ml-auto md:flex items-center hidden">
             <i class="fad fa-phone-alt text-4xl"></i>
@@ -26,7 +28,7 @@
 </header>
 
 <main id="app">
-    <section class="container">
+    <section class="container py-12">
         {{--
         <template x-if="quiz.step <= 1">
             <div>
@@ -63,13 +65,15 @@
     </section>
 </main>
 
-<footer>
-    <section class="container">
-        <p class="text-xs">We do not provide advice to investors and the information on this website should not be construed as such. The information which appears on our website is for information purposes only and does not constitute specific advice. Neither does it constitute a solicitation, offer or recommendation to invest in or dispose of, any investment. If you are in any doubt as to the suitability of an investment, you should seek independent financial advice from a suitable financial advisor</p>
-        <a href="/pages/privacy">Privacy Policy</a>
-        <a href="/pages/terms">Terms and Conditions</a>
-        <a href="/pages/contact">Contact Us</a>
-        <hr class="my-3" />
+<footer class="bg-gray-50 py-4">
+    <section class="container space-y-1.5 text-gray-400">
+        <p class="text-xxs md:text-xs">We do not provide advice to investors and the information on this website should not be construed as such. The information which appears on our website is for information purposes only and does not constitute specific advice. Neither does it constitute a solicitation, offer or recommendation to invest in or dispose of, any investment. If you are in any doubt as to the suitability of an investment, you should seek independent financial advice from a suitable financial advisor</p>
+        <ul class="flex divide-x divide-gray-400 text-gray-500 leading-none space-x-1">
+            <li><a href="/pages/privacy" class="text-xs md:text-sm">Privacy Policy</a></li>
+            <li class="pl-1"><a href="/pages/terms" class="text-xs md:text-sm">Terms and Conditions</a></li>
+            <li class="pl-1"><a href="/pages/contact" class="text-xs md:text-sm">Contact Us</a></li>
+        </ul>
+        <hr class="my-3 border-gray-300" />
         <span class="block text-center">© 2020 {{ $site['name'] }}</span>
     </section>
 </footer>
