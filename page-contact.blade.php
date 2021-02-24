@@ -16,7 +16,7 @@
 </header>
 
 <main id="app">
-    <section class="container">
+    <section class="container py-12">
         <h1 class="text-4xl font-black">Contact Us</h1>
         <p><strong>If you are looking for more information on the products or need help with your order, then our award-winning customer service agents are standing by to assist you!</strong></p>
         <dl class="bg-gray-50 rounded-lg text-base text-gray-500 p-8 space-y-3 mt-4">

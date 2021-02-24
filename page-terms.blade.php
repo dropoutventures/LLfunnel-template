@@ -16,7 +16,7 @@
 </header>
 
 <main id="app">
-    <section class="container">
+    <section class="container py-12">
         <h1 class="text-4xl font-black">Terms And Conditions</h1>
         <p>We value you as our customer and we respect your privacy. This privacy statement provides information about the personal information and its associated services (“Site”) collects, and the ways in which the Site uses that personal information.</p>
         <br /><h5>WHAT IS COLLECTED?</h5>
