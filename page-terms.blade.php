@@ -19,9 +19,9 @@
     <section class="container">
         <h1 class="text-4xl font-black">Terms And Conditions</h1>
         <p>We value you as our customer and we respect your privacy. This privacy statement provides information about the personal information and its associated services (“Site”) collects, and the ways in which the Site uses that personal information.</p>
-        <h5>WHAT IS COLLECTED?</h5>
+        <br /><h5>WHAT IS COLLECTED?</h5>
         <p>We may collect and use personal information you provide us, including (but not limited to) your name, email address, postal address, phone number, credit card number, gender, birthday and preferences, (“Information”) when you visit our Site, place an order online or by phone, provide any information to us online, contact us, participate in any online promotion, activity, survey or contest. We keep a record of the Information and may merge this information with other information we may have about you, whether through previous interactions, joint marketing partners, and/or unrelated third parties.</p>
-        <h5>HOW IS MY INFORMATION USED?</h5>
+        <br /><h5>HOW IS MY INFORMATION USED?</h5>
         <p>We may use your Information in a number of ways:</p>
         <ul>
             <li>To process and fulfill an order</li>
@@ -33,9 +33,9 @@
             <li>To improve our Site and services we provide you</li>
             <li>To protect the security and integrity of the Site and our business.</li>
         </ul>
-        <h5>HOW IS MY INFORMATION TRANSMITTED AND STORED?</h5>
+        <br /><h5>HOW IS MY INFORMATION TRANSMITTED AND STORED?</h5>
         <p>The Information that we collect may be stored and processed in and transferred between any of the countries in which we operates to enable the use of the Information in accordance with this privacy policy.</p>
-        <h5>OTHER WEBSITES</h5>
+        <br /><h5>OTHER WEBSITES</h5>
         <p>This Site contains links to other websites and other third party sites may link their pages to our Site. We have no control, cannot verify and do not endorse any third party sites. Accordingly, we have no obligation or responsibility regarding any content derived, obtained, accessed within, through or outside the Site. Any hyperlinks to any other websites are not an endorsement or verification of such sites. We are also not responsible for the privacy policies or practices of any third party.</p>
     </section>
 </main>
