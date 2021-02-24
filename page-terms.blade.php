@@ -5,7 +5,7 @@
     <x-header-scripts />
 </head>
 
-<body class="loading" x-data="{ error: false }" x-init="() => { $el.classList.remove('loading') }">
+<body class="loading" id="{{ $view_name }}" x-data="{ error: false }" x-init="() => { $el.classList.remove('loading') }">
 
 <header class="border-b border-gray-200 border-solid p-3">
     <div class="container flex flex-wrap">
@@ -16,7 +16,7 @@
 </header>
 
 <main id="app">
-    <section class="container text-center">
+    <section class="container">
         <h1 class="text-4xl font-black">Terms And Conditions</h1>
         <p>We value you as our customer and we respect your privacy. This privacy statement provides information about the personal information and its associated services (“Site”) collects, and the ways in which the Site uses that personal information.</p>
         <h5>WHAT IS COLLECTED?</h5>

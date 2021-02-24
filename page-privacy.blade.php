@@ -5,7 +5,7 @@
     <x-header-scripts />
 </head>
 
-<body class="loading" x-data="{ error: false }" x-init="() => { $el.classList.remove('loading') }">
+<body class="loading" id="{{ $view_name }}" x-data="{ error: false }" x-init="() => { $el.classList.remove('loading') }">
 
 <header class="border-b border-gray-200 border-solid p-3">
     <div class="container flex flex-wrap">
@@ -16,7 +16,7 @@
 </header>
 
 <main id="app">
-    <section class="container text-center">
+    <section class="container">
         <h1 class="text-4xl font-black">Privacy Policy</h1>
         <p><strong>BY USING OUR SITE, YOU CONSENT TO THE COLLECTION, USE AND TRANSFER OF YOUR PERSONAL DATA FOR PROCESSING AS DESCRIBED IN THIS PRIVACY POLICY.</strong></p>
         <p>For residents of the European Union: In order to comply with the requirements of the European General Data Protection Regulation (GDPR) for our European users, this Privacy Policy outlines the legal basis on which we process your Personal Data and provides other information required by the GDPR.</p>
