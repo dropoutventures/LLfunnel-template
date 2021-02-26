@@ -1,1 +1,65 @@
-@charset "UTF-8";body#page_index #app{margin:0 auto;width:100%;max-width:620px}.Options--option{padding:0;cursor:pointer;background:#eee;height:80px;border:none;border-radius:0;color:#555!important;font-size:18px}.Options--option:before{content:"\F00C";font-family:Font Awesome\ 5 Pro;display:none}.Options--option svg[data-fa-pseudo-element]{background:#ddd;color:#ddd;height:80px;width:80px;font-size:60px;display:flex!important;justify-content:center;align-items:center}.Options--option:hover svg[data-fa-pseudo-element]{color:#eee}:checked+.Options--option svg[data-fa-pseudo-element]{background:#0170bc!important;color:#fff!important}.Quiz--answer{padding:1rem}.Quiz--button{font-size:30px;padding:5px 25px;line-height:43px;border-radius:0!important;max-width:45%;width:100%;background-color:#0170bc!important;float:right}.Form--button{max-width:100%}
+@charset "UTF-8";
+
+body#page_index #app {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 620px;
+}
+
+/*-- Quiz --*/
+
+.Options--option {
+  padding: 0;
+  cursor: pointer;
+  background: #eeeeee;
+  height: 80px;
+  border: none;
+  border-radius: 0px;
+  color: #555 !important;
+  font-size: 18px;
+}
+
+.Options--option::before {
+  content: '\F00C';
+  font-family: "Font Awesome 5 Pro";
+  display: none;
+}
+
+.Options--option svg[data-fa-pseudo-element] {
+  background: #dddddd;
+  color: #dddddd;
+  height: 80px;
+  width: 80px;
+  font-size: 60px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.Options--option:hover svg[data-fa-pseudo-element] {
+  color: #eee;
+}
+
+:checked + .Options--option svg[data-fa-pseudo-element] {
+  background: #0170bc !important;
+  color: white !important;
+}
+
+.Quiz--answer {
+  padding: 1rem;
+}
+
+.Quiz--button {
+  font-size: 30px;
+  padding: 5px 25px;
+  line-height: 43px;
+  border-radius: 0px !important;
+  max-width: 45%;
+  width: 100%;
+  background-color: #0170bc !important;
+  float: right;
+}
+
+.Form--button {
+  max-width: 100%;
+}

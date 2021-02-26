@@ -30,7 +30,7 @@
 <main id="app">
     <section class="container py-12">
         {{--
-        <template x-if="quiz.step <= 1">
+        <template hidden x-if="quiz.step <= 1">
             <div>
                 @if(!empty($page['headline'] ?? false))
                     <h1 class="Quiz--heading">{!! $page['headline'] !!}</h1>
@@ -40,7 +40,7 @@
                 @endif
             </div>
         </template>
-        <template x-if="quiz.step > 1">
+        <template hidden x-if="quiz.step > 1">
             <div class="border-b-2 pb-2 mb-2">
                 <div class="flex flex-col md:flex-row md:items-center md:justify-between">
                     <div class="flex-1">
